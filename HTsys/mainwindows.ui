@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindows</class>
+ <widget class="QMainWindow" name="MainWindows">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1312</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>《项目管理系统》  --designed by 皮皮爹地</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Images.qrc">
+    <normaloff>:/images/resources/images/pg1.ico</normaloff>:/images/resources/images/pg1.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>项目明细</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QTableWidget" name="detailsWidget">
+             <property name="minimumSize">
+              <size>
+               <width>700</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="sortingEnabled">
+              <bool>false</bool>
+             </property>
+             <column>
+              <property name="text">
+               <string>序号</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>项目类别</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>项目名称</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>负责人</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>立项金额（万）</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>合同金额（万）</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>当前状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>节点达成率</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>计划项目立项</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>实际立项</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>计划开标</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>实际开标</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>计划合同签订</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>实际合同签订</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>计划采购制造</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>实际采购制造</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>计划到货</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>实际到货</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>计划安装调试</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>实际安装调试</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>计划工艺验证</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>实际工艺验证</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>计划预验收</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>实际预验收</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>计划终验收</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>实际终验收</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>状态</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>资料归档</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>供应商后评价</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>编辑</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QPushButton" name="loadButton">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>加载数据</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Images.qrc">
+                   <normaloff>:/images/resources/images/pg1.ico</normaloff>:/images/resources/images/pg1.ico</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="saveAllButton">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>全部保存</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="addButton">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>添加条目</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="deleteButton">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>删除条目</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="saveButton">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>保存当前</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="saveFileButton">
+                 <property name="text">
+                  <string>导出文件</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="title">
+             <string>统计</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QPushButton" name="updateStatusButton">
+                 <property name="text">
+                  <string>更新状态</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="text">
+                  <string>预留3</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="text">
+                  <string>预留4</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>处理内容：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="processDetails">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>无</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>处理进度：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QProgressBar" name="progressBar">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="value">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1312</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>打开文件(O)</string>
+   </property>
+   <property name="toolTip">
+    <string>从文件导入数据</string>
+   </property>
+   <property name="statusTip">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出系统(E)</string>
+   </property>
+   <property name="toolTip">
+    <string>退出应用</string>
+   </property>
+   <property name="statusTip">
+    <string>退出系统</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>索引(H)</string>
+   </property>
+   <property name="toolTip">
+    <string>进入帮助页</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于(A)</string>
+   </property>
+   <property name="toolTip">
+    <string>关于《项目管理系统》</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
